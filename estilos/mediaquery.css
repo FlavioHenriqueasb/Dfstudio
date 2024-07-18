@@ -1,0 +1,167 @@
+@charset "UTF-8"; 
+
+@media screen and (max-width: 1020px) {
+    /*CLASSES GERAIS*/
+    .flex {
+        flex-direction: column;
+    }
+
+    h2.titulo {
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    /*CABEÇALHO*/
+    .menu-desktop, .Df-contato {
+        display: none;
+    }
+
+    /*ESTILO DO MENU MOBILE*/
+
+    .Df-abrir-menu i{
+        color: #A7103D;
+        font-size: 40px;
+    }
+     
+    .Df-abrir-menu {
+        display: block;
+    }
+
+    .menu-mobile {
+        background-color: rgba(199, 198, 198, 0.616);
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 9999;
+        width: 0%;
+        overflow: hidden;
+        transition: .5s;
+        display: block;
+    }
+
+    .menu-mobile.abrir-menu {
+        width: 70%;
+    }
+
+    .menu-mobile.abrir-menu ~ .overlay-menu {
+        display: block;
+    }
+
+    .menu-mobile .Df-fechar {
+        padding: 20px 5%;
+    }
+
+    .menu-mobile .Df-fechar i{
+        color: #A7103D;
+        font-size: 30px;
+
+    }
+
+    .menu-mobile nav ul {
+        text-align: right;
+    }
+
+    .menu-mobile nav ul a {
+        color: black;
+        font-size: 20px;
+        font-weight: 300;
+        padding: 20px 8%;
+        display: block;
+    }
+
+    .menu-mobile nav ul a:hover {
+        background-color: #A7103D;
+    }
+
+    .overlay-menu {
+        background-color: rgba(199, 198, 198, 0.616);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 8888;
+        display: none;
+    }
+
+    /*TOPO DO SITE*/
+
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+    
+    .topo-do-site h1 {
+        font-size: 30px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 90%;
+    }
+
+    /*ESTILOS DOS SERVIÇOS*/
+
+    section.especialidades {
+        padding: 40px 8%;
+    }
+
+    /*ESTILO DO QUEM SOU*/
+
+    section.sobre {
+        padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .Df-social {
+        text-align: center;
+    }
+
+    .img-sobre img {
+        width: 100%;
+    }
+
+    /*REFERÊNCIAS*/
+
+    section.referencias {
+        padding: 20px 8%;
+    }
+
+    .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.referencias .flex {
+        gap: 60px;
+    }
+
+    /*RODAPÉ*/
+
+    footer .flex {
+        flex-direction: column;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+}
+
+/*SEGUNDA PAGINA*/
+
+.topp-sobrancelha .img-sobrancelha img {
+    width: 90%;
+}

@@ -1,0 +1,272 @@
+@charset "UTF-8";
+
+/*GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+/*FIM DO GOOGLE FONTS*/
+
+
+/*EStilo Geral*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Plafair Display", serif;
+}
+
+body {
+    /*background-color: rgb(221, 221, 221);*/
+    background-color: rgb(218, 212, 212);
+    height: 100vh;
+}
+
+span.ponto-colorido {
+    color: #A7103D;
+}
+
+h2.titulo {
+    font-size: 38px;
+    text-align: center;
+}
+
+div.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+div.flex {
+    display: flex;
+}
+
+div.Df-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #D9AAA4;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover {
+    box-shadow: 0px 0px 5px black;
+    transform: scale(1.05);
+}
+
+/*ESTILO DO CABEÇALHO*/
+
+/*header {
+    background: linear-gradient(to bottom, #D9AAA4, #a7847f);
+} */
+
+
+header > div.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+    font-weight: 500;
+}
+
+header nav.menu-desktop a:hover {
+    color: rgba(199, 198, 198, 0.699);
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0px 40px;
+}
+
+/*ESTILO DO TOPO DO SITE*/
+
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: black;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: black;
+    margin: 40px 0px;
+    font-weight: 500;
+    font-size: 19px;
+}
+
+/*ESTILOS DOS SERVIÇOS*/
+
+section.especialidades {
+    padding: 40px 4%;
+}
+
+section.especialidades .flex {
+    gap: 60px;
+}
+
+.especialidades .especialidades-box {
+    padding: 40px;
+    border-radius: 25px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.548);
+} 
+
+.especialidades .especialidades-box i {
+    font-size: 70px;
+    color: #D9AAA4;
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0px;
+}
+
+/*ESTILO DO QUEM SOU*/
+
+section.sobre {
+    padding: 80px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: black;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0px;
+    text-align: justify;
+}
+
+.Df-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #D9AAA4;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0px 5px;
+    transition: .2s;
+}
+
+/*ESTILOS REFERÊNCIAS*/
+section.referencias {
+    padding: 20px 4%;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.171);
+}
+
+section.referencias .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-color: black;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 6.5s;
+    /*cursor: pointer;*/
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.637);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/*ESTILO RODAPÉ*/
+
+footer {
+    padding: 60px 4%;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0px;
+}
+
+.borda {
+    border-top: 2px solid black;
+}
+
+footer .line-footer p i{
+    color: #D9AAA4;   
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: black;
+}
+
+/*PARTE DO MENU MOBILE*/
+
+.Df-abrir-menu {
+    display: none;
+}
+
+.menu-mobile {
+    display: none;
+}
